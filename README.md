@@ -1,4 +1,6 @@
-Bare-bones parallel task runner.  Provide tasks as newline-separated
+# bask
+
+A minimal parallel task runner.  Provide tasks as newline-separated
 commands.  No pipes, comments, or anything fancy like that.
 
 Only prints `stdout` and `stderr` from tasks that fail.
@@ -20,3 +22,11 @@ Example:
     Running 'sleep 5'... ✓
     Running 'echo This is another task'... ✓
     $
+
+# Implementation
+
+A single [Babashka](https://babashka.org/) script.
+
+# License
+
+MIT

@@ -1,5 +1,7 @@
 echo This is a task
 sleep 3
+# commented task
 sleep 1
+
 sleep 5
 echo This is another task

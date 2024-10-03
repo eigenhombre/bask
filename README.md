@@ -1,6 +1,6 @@
 # bask
 
-<img src="https://user-images.githubusercontent.com/382668/200961230-63584dce-8811-4108-b3c6-b6ff30bafe5a.png" width="500">
+<img src="https://github.com/eigenhombre/bask/blob/0cd39476c475bdd3c44e4ab845e0b512c7ade93f/bask.jpg" width="500">
 
 A minimal parallel task runner.
 

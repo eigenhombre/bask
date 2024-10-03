@@ -1,9 +1,23 @@
 # bask
 
-A minimal parallel task runner.  Provide tasks as newline-separated
-commands.  No pipes, comments, or anything fancy like that.
+<img src="https://user-images.githubusercontent.com/382668/200961230-63584dce-8811-4108-b3c6-b6ff30bafe5a.png" width="500">
 
-Only prints `stdout` and `stderr` from tasks that fail.
+A minimal parallel task runner.
+
+
+# Status
+
+I use this heavily in my day-to-day work, but it has not been
+battle-tested by anyone else.  YMMV.
+
+## Usage
+
+Provide tasks to `bask` on stdin, as newline-separated commands.
+Comments starting with `#` are ignored.  Pipes and redirects are
+currently not supported.
+
+Only prints `stdout` and `stderr` from the first task that
+fails.
 
 Example:
 

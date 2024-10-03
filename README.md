@@ -5,7 +5,7 @@
 A minimal parallel task runner.
 
 
-# Status
+## Status
 
 I use this heavily in my day-to-day work, but it has not been
 battle-tested by anyone else.  YMMV.

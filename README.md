@@ -28,13 +28,17 @@ Example:
     sleep 1
     sleep 5
     echo This is another task
-    $ bask < example-tasks
+    $ time bask < example-tasks
     # ... takes awhile, shows spinners for each task until done ....
     Running 'echo This is a task'... ✓
     Running 'sleep 3'... ✓
     Running 'sleep 1'... ✓
     Running 'sleep 5'... ✓
     Running 'echo This is another task'... ✓
+
+    real	0m5.804s
+    user	0m0.038s
+    sys	0m0.052s
     $
 
 # Implementation

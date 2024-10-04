@@ -21,7 +21,7 @@ fails.
 
 Example:
 
-    $ make install   # Assumes ~/bin is on your path
+    $ make install   # Assumes ~/bin is on your path, or $BINDIR defined
     $ cat example-tasks
     echo This is a task
     sleep 3

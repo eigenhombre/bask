@@ -1,4 +1,6 @@
 .PHONY: install
 
+BINDIR ?= $(HOME)/bin
+
 install:
-	cp bask.bb ~/bin/bask
+	cp bask.bb $(BINDIR)/bask

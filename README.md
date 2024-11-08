@@ -10,6 +10,11 @@ A minimal parallel task runner.
 I use this heavily in my day-to-day work, but it has not been
 battle-tested by anyone else.  YMMV.
 
+## Prerequisites
+
+- `make`
+- [Babashka](https://babashka.org/)
+
 ## Usage
 
 Provide tasks to `bask` on stdin, as newline-separated commands.

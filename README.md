@@ -16,18 +16,23 @@ Provide tasks to `bask` on stdin, as newline-separated commands.
 Comments starting with `#` are ignored.  Pipes and redirects are
 currently not supported.
 
-Only prints `stdout` and `stderr` from the first task that
-fails.
+Unless `-v` (or `--verbose`) is given, `bask` only prints `stdout` and
+`stderr` from the first task that fails, if any.  The verbose flag
+results in all output being printed.
 
 Example:
 
     $ make install   # Assumes ~/bin is on your path, or $BINDIR defined
+    $ bask -h
+        -v, --verbose    Show verbose output
+        -f, --input-file File with list of tasks
     $ cat example-tasks
     echo This is a task
     sleep 3
     sleep 1
     sleep 5
     echo This is another task
+
     $ time bask < example-tasks
     # ... takes awhile, shows spinners for each task until done ....
     Running 'echo This is a task'... ✓
@@ -40,6 +45,9 @@ Example:
     user	0m0.038s
     sys	0m0.052s
     $
+
+Alternative syntax:
+    $ bask -f example-tasks
 
 # Implementation
 
